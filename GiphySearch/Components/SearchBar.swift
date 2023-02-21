@@ -2,7 +2,7 @@
 //  SearchBar.swift
 //  GiphySearch
 //
-//  Created by Torin Wiese (Work) on 2/20/23.
+//  Created by [interview candidate] on 2/20/23.
 //
 
 import SwiftUI

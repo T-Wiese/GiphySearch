@@ -2,7 +2,7 @@
 //  GifView.swift
 //  GiphySearch
 //
-//  Created by Torin Wiese (Work) on 2/17/23.
+//  Created by [interview candidate] on 2/17/23.
 //
 
 import Foundation
