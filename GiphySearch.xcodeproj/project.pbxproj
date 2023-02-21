@@ -14,6 +14,13 @@
 		632AB6DE299EB31B008BE7DB /* GiphySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632AB6DD299EB31B008BE7DB /* GiphySearchTests.swift */; };
 		632AB6E8299EB31B008BE7DB /* GiphySearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632AB6E7299EB31B008BE7DB /* GiphySearchUITests.swift */; };
 		632AB6EA299EB31B008BE7DB /* GiphySearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632AB6E9299EB31B008BE7DB /* GiphySearchUITestsLaunchTests.swift */; };
+		632AB6F7299EB7DF008BE7DB /* GifLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632AB6F6299EB7DF008BE7DB /* GifLoader.swift */; };
+		632AB6F9299EB9CB008BE7DB /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632AB6F8299EB9CB008BE7DB /* Gif.swift */; };
+		632AB6FB299EE933008BE7DB /* GifList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632AB6FA299EE933008BE7DB /* GifList.swift */; };
+		632AB6FE299FF633008BE7DB /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = 632AB6FD299FF633008BE7DB /* SwiftyGif */; };
+		632AB700299FF6A8008BE7DB /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632AB6FF299FF6A8008BE7DB /* GifView.swift */; };
+		632AB70529A3D2D0008BE7DB /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632AB70429A3D2D0008BE7DB /* SearchBar.swift */; };
+		632AB70929A3D5B9008BE7DB /* SearchResultLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632AB70829A3D5B9008BE7DB /* SearchResultLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,12 @@
 		632AB6E3299EB31B008BE7DB /* GiphySearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiphySearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		632AB6E7299EB31B008BE7DB /* GiphySearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphySearchUITests.swift; sourceTree = "<group>"; };
 		632AB6E9299EB31B008BE7DB /* GiphySearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphySearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		632AB6F6299EB7DF008BE7DB /* GifLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifLoader.swift; sourceTree = "<group>"; };
+		632AB6F8299EB9CB008BE7DB /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		632AB6FA299EE933008BE7DB /* GifList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifList.swift; sourceTree = "<group>"; };
+		632AB6FF299FF6A8008BE7DB /* GifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = "<group>"; };
+		632AB70429A3D2D0008BE7DB /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		632AB70829A3D5B9008BE7DB /* SearchResultLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632AB6FE299FF633008BE7DB /* SwiftyGif in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +108,16 @@
 		632AB6CB299EB318008BE7DB /* GiphySearch */ = {
 			isa = PBXGroup;
 			children = (
+				632AB70329A3D2BD008BE7DB /* Components */,
 				632AB6CC299EB318008BE7DB /* GiphySearchApp.swift */,
 				632AB6CE299EB318008BE7DB /* ContentView.swift */,
 				632AB6D0299EB31A008BE7DB /* Assets.xcassets */,
 				632AB6D2299EB31A008BE7DB /* Preview Content */,
+				632AB6F6299EB7DF008BE7DB /* GifLoader.swift */,
+				632AB6F8299EB9CB008BE7DB /* Gif.swift */,
+				632AB6FA299EE933008BE7DB /* GifList.swift */,
+				632AB6FF299FF6A8008BE7DB /* GifView.swift */,
+				632AB70829A3D5B9008BE7DB /* SearchResultLoader.swift */,
 			);
 			path = GiphySearch;
 			sourceTree = "<group>";
@@ -127,6 +147,14 @@
 			path = GiphySearchUITests;
 			sourceTree = "<group>";
 		};
+		632AB70329A3D2BD008BE7DB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				632AB70429A3D2D0008BE7DB /* SearchBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +171,9 @@
 			dependencies = (
 			);
 			name = GiphySearch;
+			packageProductDependencies = (
+				632AB6FD299FF633008BE7DB /* SwiftyGif */,
+			);
 			productName = GiphySearch;
 			productReference = 632AB6C9299EB318008BE7DB /* GiphySearch.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +246,9 @@
 				Base,
 			);
 			mainGroup = 632AB6C0299EB318008BE7DB;
+			packageReferences = (
+				632AB6FC299FF633008BE7DB /* XCRemoteSwiftPackageReference "SwiftyGif" */,
+			);
 			productRefGroup = 632AB6CA299EB318008BE7DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632AB70529A3D2D0008BE7DB /* SearchBar.swift in Sources */,
+				632AB6F7299EB7DF008BE7DB /* GifLoader.swift in Sources */,
+				632AB700299FF6A8008BE7DB /* GifView.swift in Sources */,
 				632AB6CF299EB318008BE7DB /* ContentView.swift in Sources */,
+				632AB6F9299EB9CB008BE7DB /* Gif.swift in Sources */,
 				632AB6CD299EB318008BE7DB /* GiphySearchApp.swift in Sources */,
+				632AB6FB299EE933008BE7DB /* GifList.swift in Sources */,
+				632AB70929A3D5B9008BE7DB /* SearchResultLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GiphySearch/Preview Content\"";
+				DEVELOPMENT_TEAM = 4SD4TZFWT4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GiphySearch/Preview Content\"";
+				DEVELOPMENT_TEAM = 4SD4TZFWT4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -577,6 +619,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		632AB6FC299FF633008BE7DB /* XCRemoteSwiftPackageReference "SwiftyGif" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kirualex/SwiftyGif.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		632AB6FD299FF633008BE7DB /* SwiftyGif */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 632AB6FC299FF633008BE7DB /* XCRemoteSwiftPackageReference "SwiftyGif" */;
+			productName = SwiftyGif;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 632AB6C1299EB318008BE7DB /* Project object */;
 }

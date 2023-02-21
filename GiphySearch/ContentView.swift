@@ -2,20 +2,20 @@
 //  ContentView.swift
 //  GiphySearch
 //
-//  Created by Torin Wiese (Work) on 2/16/23.
+//  Created on 2/16/23.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var loader = GifLoader()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+            Text("Gif Search").padding(.horizontal)
+            SearchBar(loader: loader).padding(.horizontal)
+            GifList(loader: loader).padding(.top)
+        }.padding(.horizontal)
     }
 }
 

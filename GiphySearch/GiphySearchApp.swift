@@ -2,7 +2,7 @@
 //  GiphySearchApp.swift
 //  GiphySearch
 //
-//  Created by Torin Wiese (Work) on 2/16/23.
+//  Created by [interview candidate] on 2/16/23.
 //
 
 import SwiftUI
