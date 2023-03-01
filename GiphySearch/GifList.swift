@@ -23,8 +23,10 @@ struct GifList: View {
                         LazyVStack(spacing:0) {
                             ForEach(Array(loader.searchResults.enumerated()), id:\.element) { index, element in
                                 if(index % 2 == 0) {
-                                    GifView(gif: element).frame(height:250).onAppear {
-                                        loader.loadResultsIfNecessary(id: element.id)
+                                    ShareLink(item: element.images.fixedWidth.url ?? "") {
+                                        GifView(gif: element).frame(height:250).onAppear {
+                                            loader.loadResultsIfNecessary(id: element.id)
+                                        }
                                     }
                                 }
                             }
@@ -32,8 +34,10 @@ struct GifList: View {
                         LazyVStack(spacing:0) {
                             ForEach(Array(loader.searchResults.enumerated()), id:\.element) { index, element in
                                 if(index % 2 == 1) {
-                                    GifView(gif: element).frame(height:250).onAppear {
-                                        loader.loadResultsIfNecessary(id: element.id)
+                                    ShareLink(item: element.images.fixedWidth.url ?? "") {
+                                        GifView(gif: element).frame(height:250).onAppear {
+                                            loader.loadResultsIfNecessary(id: element.id)
+                                        }
                                     }
                                 }
                             }
